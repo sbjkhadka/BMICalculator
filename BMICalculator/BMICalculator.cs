@@ -171,10 +171,6 @@ namespace BMICalculator
                     RemoveError(textBox);
                 }
             }  
-            //if(_HeightStatus && _WeightStatus)
-            //{
-            //    CalculateBMIButton.Enabled = true;
-            //}
         }
         /// <summary>
         /// clears error label
@@ -274,8 +270,11 @@ namespace BMICalculator
             BMIDefinitionTextbox.BackColor = DataContainer.DefaultColor;
             if(!(_HeightStatus && _WeightStatus))
             {
+                MessageLabel.Text = DataContainer.FieldBlankError;
+                MessageLabel.ForeColor = DataContainer.ErrorColor;
                 return;
             }
+
             double BMI = 0;
             if (_selectedUnit == Selection.Imperical)
             {
