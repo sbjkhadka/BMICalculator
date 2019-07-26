@@ -40,9 +40,10 @@ namespace BMICalculator
         public static Color DefaultColor = Color.White;
 
         public static Color UnderWeightColor = Color.Yellow;
-        public static Color NormalColor = Color.LimeGreen;
+        public static Color NormalColor = Color.DarkGreen;
         public static Color OverweightColor = Color.MistyRose;
         public static Color ObeseColor = Color.OrangeRed;
+        public static Color MultiLineResultColor = Color.CadetBlue;
 
         //Label texts
         public static string HeightLabelImperial = "My Height (in)";
@@ -56,6 +57,10 @@ namespace BMICalculator
         public static string Normal = "\r\n\r\nNormal\r\n"+GenaralMessage + "Between 18.5 and 24.9";
         public static string Overweight = "\r\n\r\nOverweight\r\n"+GenaralMessage + "Between 25 and 29.9";
         public static string Obese = "\r\n\r\nObese\r\n"+GenaralMessage + "beyond 30";
+
+        //Default Message
+        public static string DefaultMessage = "\r\nBody mass index (BMI) is a measure of body fat based " +
+            "on height and weight that applies to adult men and women.";
 
     }
 }

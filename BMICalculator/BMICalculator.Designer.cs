@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BMICalculatorForm));
             this.MetricRadioButton = new System.Windows.Forms.RadioButton();
             this.UnitSelectorTableLayoutpanel = new System.Windows.Forms.TableLayoutPanel();
             this.ImperialRadioButton = new System.Windows.Forms.RadioButton();
@@ -259,7 +260,9 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.UnitSelectorTableLayoutpanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.MaximizeBox = false;
             this.Name = "BMICalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator";

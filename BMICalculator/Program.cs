@@ -32,9 +32,11 @@ namespace BMICalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Key value pair of FormName and the instance of the form
             Forms = new Dictionary<FormName, Form>();
             Forms.Add(FormName.SPLASH_FORM,new SplashForm());
             Forms.Add(FormName.BMI_FORM,new BMICalculatorForm());
+            //Starting splash form
             Application.Run(Forms[FormName.SPLASH_FORM]);
         }
     }

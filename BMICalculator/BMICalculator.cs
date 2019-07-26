@@ -97,7 +97,9 @@ namespace BMICalculator
             _WeightStatus = false;
             _Height = 0;
             _Weight = 0;
-            _HasDecimal = false; 
+            _HasDecimal = false;
+            BMIDefinitionTextbox.Text = DataContainer.DefaultMessage;
+            BMIDefinitionTextbox.ForeColor = DataContainer.NormalColor;
         }
         /// <summary>
         /// Called when radio button labelled imperial is clicked
@@ -288,19 +290,25 @@ namespace BMICalculator
             {
                 BMITextBox.BackColor = DataContainer.UnderWeightColor;
                 BMIDefinitionTextbox.Text = DataContainer.Underweight;
+                BMIDefinitionTextbox.ForeColor = DataContainer.UnderWeightColor;
             }else if(BMI>18.5 && BMI <= 24.9)
             {
                 BMITextBox.BackColor = DataContainer.NormalColor;
                 BMIDefinitionTextbox.Text = DataContainer.Normal;
-            }else if (BMI > 24.9 && BMI <= 29.9)
+                BMIDefinitionTextbox.ForeColor = DataContainer.NormalColor;
+            }
+            else if (BMI > 24.9 && BMI <= 29.9)
             {
                 BMITextBox.BackColor = DataContainer.OverweightColor;
                 BMIDefinitionTextbox.Text = DataContainer.Overweight;
+                BMIDefinitionTextbox.ForeColor = DataContainer.OverweightColor;
             } else
             {
                 BMITextBox.BackColor = DataContainer.ObeseColor;
                 BMIDefinitionTextbox.Text = DataContainer.Obese;
+                BMIDefinitionTextbox.ForeColor = DataContainer.ObeseColor;
             }
+            BMIDefinitionTextbox.BackColor = DataContainer.MultiLineResultColor;
 
         }
         /// <summary>

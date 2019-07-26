@@ -44,11 +44,12 @@
             // 
             this.SplashLabel.AutoSize = true;
             this.SplashLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SplashLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.SplashLabel.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SplashLabel.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.SplashLabel.Location = new System.Drawing.Point(72, 77);
             this.SplashLabel.Name = "SplashLabel";
-            this.SplashLabel.Size = new System.Drawing.Size(236, 32);
+            this.SplashLabel.Size = new System.Drawing.Size(238, 34);
             this.SplashLabel.TabIndex = 0;
             this.SplashLabel.Text = "BMI Calculator";
             // 
