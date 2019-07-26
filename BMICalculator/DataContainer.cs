@@ -9,6 +9,7 @@ using System.Drawing;
 /// Submiteed By: Subarna Bijaya Khadka
 /// Student#: 300988937
 /// Last Modified: July 26, 2019
+/// Version: 1.0
 /// This application takes height and weight in Metric or Imperial units and calculates BMI from these data
 /// </summary>
 namespace BMICalculator
@@ -53,14 +54,18 @@ namespace BMICalculator
 
         //BMI Messages
         public static string GenaralMessage = "Your BMI is ";
-        public static string Underweight = "\r\n\r\nUnderweight\r\n"+GenaralMessage+"Less than 18.5";
-        public static string Normal = "\r\n\r\nNormal\r\n"+GenaralMessage + "Between 18.5 and 24.9";
-        public static string Overweight = "\r\n\r\nOverweight\r\n"+GenaralMessage + "Between 25 and 29.9";
-        public static string Obese = "\r\n\r\nObese\r\n"+GenaralMessage + "beyond 30";
+        public static string Underweight = "\r\nUnderweight\r\n"+GenaralMessage+"Less than 18.5";
+        public static string Normal = "\r\nNormal\r\n"+GenaralMessage + "Between 18.5 and 24.9";
+        public static string Overweight = "\r\nOverweight\r\n"+GenaralMessage + "Between 25 and 29.9";
+        public static string Obese = "\r\nObese\r\n"+GenaralMessage + "beyond 30";
 
         //Default Message
         public static string DefaultMessage = "\r\nBody mass index (BMI) is a measure of body fat based " +
             "on height and weight that applies to adult men and women.";
+
+
+        //Current Version
+        public static string CurrentVersion = "V1.0";
 
     }
 }

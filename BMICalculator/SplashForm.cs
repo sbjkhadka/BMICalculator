@@ -12,6 +12,7 @@ using System.Windows.Forms;
 /// Submiteed By: Subarna Bijaya Khadka
 /// Student#: 300988937
 /// Last Modified: July 26, 2019
+/// Version: 1.0
 /// This application takes height and weight in Metric or Imperial units and calculates BMI from these data
 /// </summary>
 namespace BMICalculator
@@ -45,6 +46,7 @@ namespace BMICalculator
         /// <param name="e"></param>
         private void SplashForm_Load(object sender, EventArgs e)
         {
+            VersionTextBox.Text = DataContainer.CurrentVersion;
             SplashTimer.Enabled = true;
         }
     }

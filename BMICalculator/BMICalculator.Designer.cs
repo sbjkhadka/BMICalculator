@@ -219,13 +219,14 @@
             // 
             // BMIDefinitionTextbox
             // 
-            this.BMIDefinitionTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.SetColumnSpan(this.BMIDefinitionTextbox, 2);
+            this.BMIDefinitionTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BMIDefinitionTextbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BMIDefinitionTextbox.Location = new System.Drawing.Point(3, 94);
             this.BMIDefinitionTextbox.Multiline = true;
             this.BMIDefinitionTextbox.Name = "BMIDefinitionTextbox";
             this.BMIDefinitionTextbox.ReadOnly = true;
+            this.tableLayoutPanel2.SetRowSpan(this.BMIDefinitionTextbox, 2);
             this.BMIDefinitionTextbox.Size = new System.Drawing.Size(304, 165);
             this.BMIDefinitionTextbox.TabIndex = 5;
             this.BMIDefinitionTextbox.Text = "\r\n";
@@ -243,10 +244,11 @@
             this.tableLayoutPanel2.Controls.Add(this.ResetButton, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(-4, 178);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(310, 262);
             this.tableLayoutPanel2.TabIndex = 6;
             // 

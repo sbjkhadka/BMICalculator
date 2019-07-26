@@ -12,6 +12,7 @@ using System.Windows.Forms;
 /// Submiteed By: Subarna Bijaya Khadka
 /// Student#: 300988937
 /// Last Modified: July 26, 2019
+/// Version: 1.0
 /// This application takes height and weight in Metric or Imperial units and calculates BMI from these data
 /// </summary>
 namespace BMICalculator
@@ -169,6 +170,7 @@ namespace BMICalculator
                 {
                     _HeightStatus = true;
                     RemoveError(textBox);
+                    
                 }
             }  
         }
@@ -211,8 +213,7 @@ namespace BMICalculator
                 else
                 {
                     _WeightStatus = true;
-                    textBox.BackColor = DataContainer.OkColor;
-                    MessageLabel.Text = "";
+                    RemoveError(textBox);
 
                 }
             }
@@ -226,8 +227,7 @@ namespace BMICalculator
                 else
                 {
                     _WeightStatus = true;
-                    textBox.BackColor = DataContainer.OkColor;
-                    MessageLabel.Text = "";
+                    RemoveError(textBox);
                 }
             }
             //if (_HeightStatus && _WeightStatus)
@@ -255,7 +255,6 @@ namespace BMICalculator
             TextBox textBox = sender as TextBox;
             textBox.BackColor = DataContainer.DefaultColor;
             textBox.Text = "";
-
         }
         /// <summary>
         /// Calculate BMI textbox click event handler
@@ -308,6 +307,7 @@ namespace BMICalculator
                 BMIDefinitionTextbox.ForeColor = DataContainer.ObeseColor;
             }
             BMIDefinitionTextbox.BackColor = DataContainer.MultiLineResultColor;
+          
 
         }
         /// <summary>
