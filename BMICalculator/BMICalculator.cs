@@ -7,7 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Project Name: BMI Calculator
+/// Submiteed By: Subarna Bijaya Khadka
+/// Student#: 300988937
+/// Last Modified: July 26, 2019
+/// This application takes height and weight in Metric or Imperial units and calculates BMI from these data
+/// </summary>
 namespace BMICalculator
 {
     enum Selection
