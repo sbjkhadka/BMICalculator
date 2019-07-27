@@ -30,6 +30,7 @@ namespace BMICalculator
         public static string NotANumberError = "Error: Not a Number";
         public static string FieldBlankError = "Error: Field Blank";
         public static string DataOutOfRangeError = "Error: Data out of range";
+        public static string InvalidData = "Error: Invalid data";
 
         //Error Messages related to Character Validation
         public static string DecimalAlreadyExistsError = "Error: Decimal already exists";

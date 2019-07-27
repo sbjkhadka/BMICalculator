@@ -269,7 +269,7 @@ namespace BMICalculator
             BMIDefinitionTextbox.BackColor = DataContainer.DefaultColor;
             if(!(_HeightStatus && _WeightStatus))
             {
-                MessageLabel.Text = DataContainer.FieldBlankError;
+                MessageLabel.Text = DataContainer.InvalidData;
                 MessageLabel.ForeColor = DataContainer.ErrorColor;
                 return;
             }
